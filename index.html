@@ -12,7 +12,17 @@
         <div class="item" style="--position: 1">
           <img src="./images/dragon_1.jpg" alt="" />
         </div>
-        <div class="item" style="--position: 2">
+        <div
+          class="item"
+          style="
+            --position: 2;
+            position: absolute;
+            transform: rotateY(
+                calc((var(--position)-1) * (360 / var(--quantity)) * 1deg)
+              )
+              translateZ(550px);
+          "
+        >
           <img src="./images/dragon_2.jpg" alt="" />
         </div>
         <div class="item" style="--position: 3">
